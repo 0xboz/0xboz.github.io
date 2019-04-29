@@ -2,8 +2,8 @@
     <div class="ajax-page-wrapper">
         <div class="ajax-page-nav">
             <div class="nav-item ajax-page-prev-next">
-                <a class="ajax-page-load" href=""><i class="zmdi zmdi-chevron-left"></i></a>
-                <a class="ajax-page-load" href="digitalocean_email_server.html"><i class="zmdi zmdi-chevron-right"></i></a>
+                <a class="ajax-page-load" href="auto_telegram_signup.html"><i class="zmdi zmdi-chevron-left"></i></a>
+                <a class="ajax-page-load" href=""><i class="zmdi zmdi-chevron-right"></i></a>
             </div>
             <div class="nav-item ajax-page-close-button">
                 <a id="ajax-page-close-button" href="#"><i class="zmdi zmdi-close"></i></a>
@@ -11,22 +11,26 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1>Auto Telegram Signup</h1>
+            <h1>DigitalOcean Email Server</h1>
         </div>
 
         <div class="row">
             <div class="col-sm-7 col-md-7 portfolio-block">
                 <div class="owl-carousel portfolio-page-carousel">
                     <div class="item">
-                        <img src="images/portfolio/full/auto_telegram_signup.jpg" alt="automated telegram account signup" />
+                        <img src="images/portfolio/full/digitalocean_email_server.jpg"
+                            alt="simple email server over digitalocean droplet" />
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/full/digitalocean_email_server_mail_tester.jpg"
+                            alt="simple email server over digitalocean droplet" />
                     </div>
                 </div>
-
                 <script type="text/javascript">
-                    jQuery(document).ready(function($){
+                    jQuery(document).ready(function ($) {
 
                         $('.portfolio-page-carousel').owlCarousel({
-                            smartSpeed:1200,
+                            smartSpeed: 1200,
                             items: 1,
                             loop: true,
                             dots: true,
@@ -45,11 +49,23 @@
                     <h3>Description</h3>
                 </div>
                 <ul class="project-general-info">
-                    <li><p><i class="fa fa-user"></i> Bo Zhang</p></li>
-                    <li><p><i class="fa fa-globe"></i> <a href="https://github.com/0xboz/auto_telegram_signup" target="_blank">https://github.com/0xboz/auto_telegram_signup</a></p></li>
+                    <li>
+                        <p><i class="fa fa-user"></i> Bo Zhang</p>
+                    </li>
+                    <li>
+                        <p><i class="fa fa-globe"></i> <a href="https://github.com/0xboz/digitalocean_email_server"
+                                target="_blank">https://github.com/0xboz/digitalocean_email_server</a></p>
+                    </li>
                 </ul>
 
-                <p class="text-justify">Automated telegram account signup script.</p>
+                <p class="text-justify">A simple email server over DigitalOcean droplet.</p>
+                <ul class="info-list">
+                    <li><i class="fa fa-check-circle" aria-hidden="true"> DKIM enabled verification</i></li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"> SPF enabled verification</i></li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"> DMARC policy enabled</i></li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"> TLS enabled in Postfix</i></li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"> 'Catch All' forwarding</i></li>
+                </ul>
                 <!-- /Project Description -->
 
                 <!-- Technology -->
@@ -58,8 +74,11 @@
                         <h3>Codebase / Library / Framework</h3>
                     </div>
                     <ul class="tags">
-                        <li><a>Python</a></li>
-                        <li><a>Pyrogram</a></li>
+                        <li><a>Shell</a></li>
+                        <li><a>Postfix</a></li>
+                        <li><a>DKIM</a></li>
+                        <li><a>SPF</a></li>
+                        <li><a>Let's Encrypt</a></li>
                     </ul>
                 </div>
                 <!-- /Technology -->
